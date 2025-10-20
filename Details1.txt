@@ -1,0 +1,53 @@
+“Web application security” refers to the practices, tools, and principles used to protect web apps and their data from attacks, unauthorized access, and misuse.
+Here’s a clear breakdown:
+
+1. Key Principles of Web Application Security
+Confidentiality – Keep sensitive data (like passwords or customer details) private.
+Integrity – Ensure data isn’t altered or corrupted by unauthorized users.
+Availability – Make sure the application stays accessible and functional for legitimate users.
+Authentication – Verify who the user is.
+Authorization – Control what an authenticated user is allowed to do.
+Non-repudiation – Users can’t deny their actions (e.g., transactions).
+
+2. Common Web Application Security Threats
+SQL Injection (SQLi) – Attackers insert malicious SQL code to manipulate a database.
+Cross-Site Scripting (XSS) – Injecting malicious JavaScript to steal cookies or hijack sessions.
+Cross-Site Request Forgery (CSRF) – Tricks a user’s browser into executing unwanted actions.
+Broken Authentication – Poorly implemented login/session handling allows account hijacking.
+Sensitive Data Exposure – Storing or transmitting data without encryption.
+Security Misconfiguration – Leaving default passwords, open ports, or debug modes enabled.
+Insecure Direct Object References (IDOR) – Exposing internal resources through predictable URLs.
+Denial of Service (DoS/DDoS) – Overloading servers to make apps unavailable.
+Server-Side Request Forgery (SSRF) – Making the server send unauthorized internal requests.
+Remote Code Execution (RCE) – Attacker runs arbitrary code on the server.
+
+3. Security Best Practices
+Input Validation & Output Encoding – Validate all input; escape output to prevent XSS/SQLi.
+Use HTTPS (TLS) – Encrypt communication between client and server.
+Strong Authentication & Authorization – Implement MFA, RBAC (Role-Based Access Control).
+Secure Session Management – Use secure cookies, session timeouts, and regenerate session IDs.
+Least Privilege Principle – Give users and services the minimum access needed.
+Regular Security Updates – Patch frameworks, libraries, and dependencies.
+Implement Security Headers – Use headers like Content-Security-Policy, X-Frame-Options, etc.
+Proper Error Handling & Logging – Avoid revealing sensitive details in error messages.
+Penetration Testing & Vulnerability Scanning – Regularly test for weaknesses.
+Backup & Incident Response Plans – Prepare for data recovery and breaches.
+
+4. OWASP Top 10 (Most Recognized Standard)
+OWASP (Open Web Application Security Project) publishes the Top 10 list of critical web security risks:
+Broken Access Control
+Cryptographic Failures
+Injection
+Insecure Design
+Security Misconfiguration
+Vulnerable & Outdated Components
+Identification & Authentication Failures
+Software & Data Integrity Failures
+Security Logging & Monitoring Failures
+Server-Side Request Forgery (SSRF)
+
+5. Security Tools & Frameworks
+Scanning Tools: OWASP ZAP, Burp Suite, Nikto, Nessus
+Code Analysis: SonarQube, Snyk, GitHub Dependabot
+Authentication: OAuth2, OpenID Connect, JWT
+Web Frameworks with Security Built-In: Spring Security, ASP.NET Identity, Django Auth
